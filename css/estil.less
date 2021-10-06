@@ -109,20 +109,72 @@
             }
             >h1{
                 margin: auto;
-                width: 50%;
+                
+                width: 70%;
+                text-align: center;
                 text-transform: uppercase;
-                letter-spacing: 3px;
+                letter-spacing: 4px;
                 font-size: 2em;
+                background-color: white;
+                
+                border-right: @dark 40px solid;
+                border-left: @dark 40px solid;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+
             }
             >h2{
                 margin: auto;
-                width: 50%;
-                text-transform: uppercase;
-                letter-spacing: 3px;
-                font-size: 2em;
+                width: 70%;
+                text-align: center;
+                height: 30px;
+                background-color: @dark;
+                color: white;
+                border-right: @dark 40px solid;
+                border-left: @dark 40px solid;
+                border-bottom-left-radius: 15px;
+               
+
+                
+                &::after{
+                    content: "";
+                }
+                
             }
-            img{
-                width: 200px;
+            figure{
+                img{
+                    display: inline-block;
+                    width: 200px;
+                }
+            }
+            header{
+                
+                i{
+                    display: inline-block;
+                    height: 70px;
+                    background-color: #fff;
+                    width: 30px;
+                    margin-right: 100px;
+                }
+            }
+            main{
+                div{
+                    font-size: 18px;
+                    width: 600px;
+                    height: 40%;
+                    background-color: @dark;
+                    p{
+                        &:first-child{
+                            color: @medium;
+                            &::first-letter{
+                                font-size:  2.5em;
+                            }
+                            &::first-line{
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

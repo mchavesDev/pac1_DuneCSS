@@ -87,18 +87,54 @@
 }
 #edu_iesmila_daw2_diw_pac1 section article > h1 {
   margin: auto;
-  width: 50%;
+  width: 70%;
+  text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   font-size: 2em;
+  background-color: white;
+  border-right: #312b31 40px solid;
+  border-left: #312b31 40px solid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 #edu_iesmila_daw2_diw_pac1 section article > h2 {
   margin: auto;
-  width: 50%;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 2em;
+  width: 70%;
+  text-align: center;
+  height: 30px;
+  background-color: #312b31;
+  color: white;
+  border-right: #312b31 40px solid;
+  border-left: #312b31 40px solid;
+  border-bottom-left-radius: 15px;
 }
-#edu_iesmila_daw2_diw_pac1 section article img {
+#edu_iesmila_daw2_diw_pac1 section article > h2::after {
+  content: "";
+}
+#edu_iesmila_daw2_diw_pac1 section article figure img {
+  display: inline-block;
   width: 200px;
+}
+#edu_iesmila_daw2_diw_pac1 section article header i {
+  display: inline-block;
+  height: 70px;
+  background-color: #fff;
+  width: 30px;
+  margin-right: 100px;
+}
+#edu_iesmila_daw2_diw_pac1 section article main div {
+  font-size: 18px;
+  width: 600px;
+  height: 40%;
+  background-color: #312b31;
+}
+#edu_iesmila_daw2_diw_pac1 section article main div p:first-child {
+  color: #a48360;
+}
+#edu_iesmila_daw2_diw_pac1 section article main div p:first-child::first-letter {
+  font-size: 2.5em;
+}
+#edu_iesmila_daw2_diw_pac1 section article main div p:first-child::first-line {
+  font-weight: bold;
 }
