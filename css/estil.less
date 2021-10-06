@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+// ================= COLORS =========================
+
+@dark: #312b31;
+@light: #EEDCC2;
+@medium: #a48360;
+@yellow_dark: #6D602C;
+@yellow: yellow;
+
+// ================= FONTS =========================
+@font-face {
+    font-family: 'dune_font';
+    src: url('OrthodoxHerbertarian.ttf');
+}
+@font-face {
+    font-family: 'rubik';
+    src: url('Rubik-VariableFont_wght.ttf');
+}
+
+// Useu també la font  'Rubik'
+// de Google fonts 
+
+
+// ================= ESTILS =========================
+#edu_iesmila_daw2_diw_pac1 {
+    background-image: url("../imatges/background.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(121, 106, 57, 0.658);
+    /// TITLE
+    header{
+        padding-top: 40px;
+        padding-left: 20px;
+        font-family: Rubik;
+        color:white;
+        font-size: 60px;
+        -webkit-text-stroke: 2px black;
+        margin: 10px;
+        h1 {
+            font-family: dune_font;
+            color: @light;
+            font-size: 80px;
+            text-shadow: 2px 2px rgb(53, 53, 53);
+    
+            &::after {
+                content: '';
+            }
+    
+            &::first-letter {
+                font-size: 2em;
+                color: @medium;
+            }
+        }
+        
+    }
+    /// START NAV
+    nav {
+        margin: auto;
+        margin-top: 60px;
+        width: 1000px;
+        li {
+            padding-left: 25px;
+            padding-right: 15px;
+            padding-bottom: 25px;
+            font-family: dune_font;
+            color: @medium;
+            font-size: 35px;
+            text-align: center;
+            display: inline-block;
+
+            &:hover {
+                color: white;
+                &::before{
+                    content: "▣";
+                    font-size: 30px;
+                    display: inline-block;
+                    position: relative;
+                    bottom: 15px;
+                }
+                
+            }
+            &::before{
+                content: "▤";
+                font-size: 30px;
+                display: inline-block;
+                position: relative;
+                bottom: 15px;
+            }
+        }
+
+    }
+    section{
+        padding-top:50px;
+        width: 1000px;
+        height: 100%;
+        background-color: @dark;
+        margin: auto;
+        article{
+            
+            font-family: Rubik;
+            margin: auto;
+            width: 95%;
+            height: 33%;
+            background: linear-gradient(to bottom, white 0%,#312b31 99%);   
+            &:nth-child(2n) {
+                background: linear-gradient(to bottom, #9f805e 0%,#312b31 99%);       
+            }
+            >h1{
+                margin: auto;
+                width: 50%;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 2em;
+            }
+            >h2{
+                margin: auto;
+                width: 50%;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 2em;
+            }
+            img{
+                width: 200px;
+            }
+        }
+    }
+}

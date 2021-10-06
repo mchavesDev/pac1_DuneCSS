@@ -1,0 +1,104 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'dune_font';
+  src: url('OrthodoxHerbertarian.ttf');
+}
+@font-face {
+  font-family: 'rubik';
+  src: url('Rubik-VariableFont_wght.ttf');
+}
+#edu_iesmila_daw2_diw_pac1 {
+  background-image: url("../imatges/background.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(121, 106, 57, 0.658);
+}
+#edu_iesmila_daw2_diw_pac1 header {
+  padding-top: 40px;
+  padding-left: 20px;
+  font-family: Rubik;
+  color: white;
+  font-size: 60px;
+  -webkit-text-stroke: 2px black;
+  margin: 10px;
+}
+#edu_iesmila_daw2_diw_pac1 header h1 {
+  font-family: dune_font;
+  color: #EEDCC2;
+  font-size: 80px;
+  text-shadow: 2px 2px #353535;
+}
+#edu_iesmila_daw2_diw_pac1 header h1::after {
+  content: '';
+}
+#edu_iesmila_daw2_diw_pac1 header h1::first-letter {
+  font-size: 2em;
+  color: #a48360;
+}
+#edu_iesmila_daw2_diw_pac1 nav {
+  margin: auto;
+  margin-top: 60px;
+  width: 1000px;
+}
+#edu_iesmila_daw2_diw_pac1 nav li {
+  padding-left: 25px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  font-family: dune_font;
+  color: #a48360;
+  font-size: 35px;
+  text-align: center;
+  display: inline-block;
+}
+#edu_iesmila_daw2_diw_pac1 nav li:hover {
+  color: white;
+}
+#edu_iesmila_daw2_diw_pac1 nav li:hover::before {
+  content: "▣";
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+}
+#edu_iesmila_daw2_diw_pac1 nav li::before {
+  content: "▤";
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+}
+#edu_iesmila_daw2_diw_pac1 section {
+  padding-top: 50px;
+  width: 1000px;
+  height: 100%;
+  background-color: #312b31;
+  margin: auto;
+}
+#edu_iesmila_daw2_diw_pac1 section article {
+  font-family: Rubik;
+  margin: auto;
+  width: 95%;
+  height: 33%;
+  background: linear-gradient(to bottom, white 0%, #312b31 99%);
+}
+#edu_iesmila_daw2_diw_pac1 section article:nth-child(2n) {
+  background: linear-gradient(to bottom, #9f805e 0%, #312b31 99%);
+}
+#edu_iesmila_daw2_diw_pac1 section article > h1 {
+  margin: auto;
+  width: 50%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2em;
+}
+#edu_iesmila_daw2_diw_pac1 section article > h2 {
+  margin: auto;
+  width: 50%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2em;
+}
+#edu_iesmila_daw2_diw_pac1 section article img {
+  width: 200px;
+}
