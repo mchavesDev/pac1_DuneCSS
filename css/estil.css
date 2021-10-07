@@ -39,7 +39,7 @@
 #edu_iesmila_daw2_diw_pac1 nav {
   margin: auto;
   margin-top: 60px;
-  width: 1000px;
+  width: 900px;
 }
 #edu_iesmila_daw2_diw_pac1 nav li {
   padding-left: 25px;
@@ -70,7 +70,7 @@
 }
 #edu_iesmila_daw2_diw_pac1 section {
   padding-top: 50px;
-  width: 1000px;
+  width: 900px;
   height: 100%;
   background-color: #312b31;
   margin: auto;
@@ -78,8 +78,9 @@
 #edu_iesmila_daw2_diw_pac1 section article {
   font-family: Rubik;
   margin: auto;
+  padding-top: 40px;
   width: 95%;
-  height: 33%;
+  height: fit-content;
   background: linear-gradient(to bottom, white 0%, #312b31 99%);
 }
 #edu_iesmila_daw2_diw_pac1 section article:nth-child(2n) {
@@ -87,12 +88,15 @@
 }
 #edu_iesmila_daw2_diw_pac1 section article > h1 {
   margin: auto;
-  width: 70%;
+  height: 60px;
+  line-height: 2em;
+  width: 80%;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 2em;
   background-color: white;
+  border-top: #312b31 1px solid;
   border-right: #312b31 40px solid;
   border-left: #312b31 40px solid;
   border-top-left-radius: 15px;
@@ -100,41 +104,112 @@
 }
 #edu_iesmila_daw2_diw_pac1 section article > h2 {
   margin: auto;
-  width: 70%;
+  width: 80%;
   text-align: center;
-  height: 30px;
+  height: 60px;
   background-color: #312b31;
   color: white;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #e67308, 0 0 30px #e67308, 0 0 40px #e67308, 0 0 55px #e67308, 0 0 75px #e67308;
   border-right: #312b31 40px solid;
   border-left: #312b31 40px solid;
   border-bottom-left-radius: 15px;
 }
 #edu_iesmila_daw2_diw_pac1 section article > h2::after {
-  content: "";
+  color: yellow;
+  font-size: 3em;
+  content: "”";
+}
+#edu_iesmila_daw2_diw_pac1 section article > h2::before {
+  color: yellow;
+  font-size: 3em;
+  content: "“";
+}
+#edu_iesmila_daw2_diw_pac1 section article figure {
+  float: right;
+  padding-right: 46px;
+  width: 200px;
+  height: 300px;
 }
 #edu_iesmila_daw2_diw_pac1 section article figure img {
-  display: inline-block;
   width: 200px;
+  height: 300px;
+}
+#edu_iesmila_daw2_diw_pac1 section article figure h1 {
+  position: relative;
+  top: -3px;
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  background-color: white;
+  width: 100px;
+  height: fit-content;
+  border-right: #312b31 40px solid;
+  border-left: #312b31 40px solid;
+  border-bottom-left-radius: 15px ;
+  border-bottom-right-radius: 15px;
+}
+#edu_iesmila_daw2_diw_pac1 section article header {
+  position: relative;
+  top: -50px;
+  left: 220px;
 }
 #edu_iesmila_daw2_diw_pac1 section article header i {
   display: inline-block;
   height: 70px;
-  background-color: #fff;
+  background: linear-gradient(to right, #000000 0%, #725326 45%, #967635 51%, #ffffff 100%);
   width: 30px;
   margin-right: 100px;
+  border-left: #312b31 3px solid;
+  border-right: #312b31 3px solid;
+}
+#edu_iesmila_daw2_diw_pac1 section article main {
+  position: relative;
+  top: -70px;
+  padding-bottom: 100px;
 }
 #edu_iesmila_daw2_diw_pac1 section article main div {
-  font-size: 18px;
-  width: 600px;
+  margin-left: 120px;
+  padding: 20px;
+  font-size: 17px;
+  width: 400px;
   height: 40%;
   background-color: #312b31;
+}
+#edu_iesmila_daw2_diw_pac1 section article main div p {
+  line-height: 1.5em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 #edu_iesmila_daw2_diw_pac1 section article main div p:first-child {
   color: #a48360;
 }
 #edu_iesmila_daw2_diw_pac1 section article main div p:first-child::first-letter {
+  font-family: dune_font;
   font-size: 2.5em;
 }
 #edu_iesmila_daw2_diw_pac1 section article main div p:first-child::first-line {
   font-weight: bold;
+}
+#edu_iesmila_daw2_diw_pac1 section article main div p:last-child {
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #e67308, 0 0 30px #e67308, 0 0 40px #e67308, 0 0 55px #e67308, 0 0 75px #e67308;
+  color: white;
+  text-align: center;
+}
+#edu_iesmila_daw2_diw_pac1 section article main div p:last-child a::after {
+  content: ' ' attr(href);
+  display: block;
+  color: white;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #e67308, 0 0 30px #e67308, 0 0 40px #e67308, 0 0 55px #e67308, 0 0 75px #e67308;
+}
+#edu_iesmila_daw2_diw_pac1 section article main div p:last-child::before {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid yellow;
 }

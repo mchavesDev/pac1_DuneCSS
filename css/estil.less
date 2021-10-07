@@ -59,7 +59,7 @@
     nav {
         margin: auto;
         margin-top: 60px;
-        width: 1000px;
+        width: 900px;
         li {
             padding-left: 25px;
             padding-right: 15px;
@@ -93,7 +93,7 @@
     }
     section{
         padding-top:50px;
-        width: 1000px;
+        width: 900px;
         height: 100%;
         background-color: @dark;
         margin: auto;
@@ -101,22 +101,24 @@
             
             font-family: Rubik;
             margin: auto;
+            padding-top: 40px;
             width: 95%;
-            height: 33%;
+            height: fit-content;
             background: linear-gradient(to bottom, white 0%,#312b31 99%);   
             &:nth-child(2n) {
                 background: linear-gradient(to bottom, #9f805e 0%,#312b31 99%);       
             }
             >h1{
                 margin: auto;
-                
-                width: 70%;
+                height: 60px;
+                line-height: 2em;
+                width: 80%;
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 4px;
                 font-size: 2em;
                 background-color: white;
-                
+                border-top: @dark 1px solid;
                 border-right: @dark 40px solid;
                 border-left: @dark 40px solid;
                 border-top-left-radius: 15px;
@@ -125,11 +127,13 @@
             }
             >h2{
                 margin: auto;
-                width: 70%;
+                width: 80%;
                 text-align: center;
-                height: 30px;
+                height: 60px;
                 background-color: @dark;
                 color: white;
+                text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #e67308, 0 0 30px #e67308, 0 0 40px #e67308, 0 0 55px #e67308, 0 0 75px #e67308;
+
                 border-right: @dark 40px solid;
                 border-left: @dark 40px solid;
                 border-bottom-left-radius: 15px;
@@ -137,42 +141,114 @@
 
                 
                 &::after{
-                    content: "";
+                    color: yellow;
+                    font-size: 3em;
+                    content: "”";
+                }
+                &::before{
+                    color: yellow;
+                    font-size: 3em;
+                    content: "“";
                 }
                 
             }
             figure{
+                float: right;
+                padding-right: 46px;
+                width: 200px;
+                height: 300px;
                 img{
-                    display: inline-block;
+                    
                     width: 200px;
+                    height: 300px;
+                }
+                h1{
+                    position:relative;
+                    top:-3px;
+                    text-align: center;
+                    padding :10px;
+                    font-style: italic;
+                    background-color: white;
+                    width: 100px;
+                    height: fit-content;
+                    border-right: @dark 40px solid;
+                    border-left: @dark 40px solid;
+                    border-bottom-left-radius: 15px ;
+                    border-bottom-right-radius: 15px;
+
                 }
             }
             header{
-                
+                position: relative;
+                top: -50px;
+                left: 220px;
                 i{
                     display: inline-block;
                     height: 70px;
-                    background-color: #fff;
+                    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgb(114, 83, 38) 45%,rgb(150, 118, 53) 51%,rgba(255,255,255,1) 100%); ;
                     width: 30px;
                     margin-right: 100px;
+                    border-left: @dark 3px solid;
+                    border-right: @dark 3px solid;
+
                 }
             }
             main{
+                position: relative;
+                top: -70px;
+                padding-bottom: 100px;
                 div{
-                    font-size: 18px;
-                    width: 600px;
+                    margin-left: 120px;
+                    padding: 20px;
+                    font-size: 17px;
+                    width: 400px;
                     height: 40%;
                     background-color: @dark;
+                    
                     p{
+                        line-height: 1.5em;
+                        text-align: justify;
+                        text-justify: inter-word;
                         &:first-child{
                             color: @medium;
                             &::first-letter{
+                                font-family: dune_font;
                                 font-size:  2.5em;
                             }
                             &::first-line{
                                 font-weight: bold;
                             }
                         }
+                        &:last-child{
+                            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #e67308, 0 0 30px #e67308, 0 0 40px #e67308, 0 0 55px #e67308, 0 0 75px #e67308;
+                            color: white;
+                            text-align: center;
+                            a{
+                                &::after{
+                                    content: ' ' attr(href);
+                                    display: block;
+                                    color: white;
+                                    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #e67308, 0 0 30px #e67308, 0 0 40px #e67308, 0 0 55px #e67308, 0 0 75px #e67308;
+                                }
+                                
+                            }
+                            &::before{
+                                content: "";
+                                display: block;
+                                margin: auto;
+                                margin-top: 40px;
+                                margin-bottom: 40px;
+                               
+                                width: 0; 
+                                height: 0; 
+                                border-left: 20px solid transparent;
+                                border-right: 20px solid transparent;
+                                
+                                border-top: 20px solid @yellow;
+                            }
+                        }
+                        
+
                     }
                 }
             }
